@@ -1,0 +1,22 @@
+{
+    "version"     : "0.1.0",
+    "name"        : "jf-chrono",
+    "author"      : "Joaquín Fernández",
+    "description" : "Simple class for using chronometers and timers in applications.",
+    "keywords"    : [
+        "chrono",
+        "chronometer",
+        "interval",
+        "time",
+        "timer"
+    ],
+    "license"     : "MIT",
+    "homepage"    : "http://www.joaquinfernandez.net",
+    "repository"  : {
+        "type" : "git",
+        "url"  : "https://github.com/joaquinfq/jfChrono"
+    },
+    "scripts"      : {
+        "test" : "node test"
+    }
+}
