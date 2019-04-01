@@ -10,7 +10,8 @@ const chronos = {};
  * @namespace jf
  * @class     jf.Chrono
  */
-module.exports = class jfChrono {
+module.exports = class jfChrono
+{
     /**
      * Construye la instancia usando los valores especificados.
      *
@@ -64,6 +65,7 @@ module.exports = class jfChrono {
         {
             _endTime = new Date().getTime();
         }
+
         return _endTime - this.startTime;
     }
 
@@ -138,8 +140,9 @@ module.exports = class jfChrono {
     startTimer(interval = 1000, cb)
     {
         const _isFunction = typeof cb === 'function';
-        this.__timer = setInterval(
-            () => {
+        this.__timer      = setInterval(
+            () =>
+            {
                 this.setTime('endTime', 'now');
                 if (_isFunction)
                 {
@@ -147,7 +150,7 @@ module.exports = class jfChrono {
                 }
             },
             interval
-        )
+        );
     }
 
     /**
@@ -207,10 +210,11 @@ module.exports = class jfChrono {
         {
             if (!(name in chronos))
             {
-                chronos[name] = new jfChrono(startTime, endTime)
+                chronos[name] = new jfChrono(startTime, endTime);
             }
             _result = chronos[name];
         }
+
         return _result;
     }
 
